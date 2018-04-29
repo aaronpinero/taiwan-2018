@@ -1,3 +1,15 @@
+// colors
+$red:#FF838B;
+$orange:#FFB264;
+$yellow:#D8CD35;
+$green:#7BCE27;
+$blue:#92CEFF;
+$purple:#C8A1FF;
+
+// measures
+$limit-text:45rem;
+$limit-body:80rem;
+
 // tyfy overrides
 $tyfy-grid-unit:1rem;
 $tyfy-font-size-base:1.125rem;
@@ -9,11 +21,5 @@ $tyfy-font-base:$tyfy-sans;
 $tyfy-font-heading:$tyfy-sans;
 $tyfy-font-pullquote:$tyfy-sans;
 $tyfy-font-table:$tyfy-sans;
-
-// colors
-$red:#FF838B;
-$orange:#FFB264;
-$yellow:#D8CD35;
-$green:#7BCE27;
-$blue:#92CEFF;
-$purple:#C8A1FF;
+$tyfy-color-link-default:darken($red,10%);
+$tyfy-color-link-active:darken($green,10%);

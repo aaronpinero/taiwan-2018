@@ -1,6 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,800,800i');
 @import "settings";
-@import "../../node_modules/tyfy/source/scss/tyfy.scss";
+
+@import "../../node_modules/tyfy/source/scss/required/core";
+@import "../../node_modules/tyfy/source/scss/required/functions";
+@import "../../node_modules/tyfy/source/scss/required/settings";
+@import "../../node_modules/tyfy/source/scss/required/mixins";
+
+@import "../../node_modules/tyfy/source/scss/essential/normalize";
+@import "../../node_modules/tyfy/source/scss/essential/body";
+@import "../../node_modules/tyfy/source/scss/essential/spacing";
+
+@import "../../node_modules/tyfy/source/scss/optional/paragraphs";
+@import "../../node_modules/tyfy/source/scss/optional/headings";
+@import "../../node_modules/tyfy/source/scss/optional/links";
+@import "../../node_modules/tyfy/source/scss/optional/lists";
+@import "../../node_modules/tyfy/source/scss/optional/utility";
+@import "../../node_modules/tyfy/source/scss/optional/quotes";
+@import "../../node_modules/tyfy/source/scss/optional/tables";
+
 @import "header";
 @import "article";
 
