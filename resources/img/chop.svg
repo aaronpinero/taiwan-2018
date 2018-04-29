@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>chop</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="chop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M4.16430977,2.36822747 C5.90672931,-0.192253573 29.7130237,2.36822747 49.621505,2.36822747 C69.5299864,2.36822747 96.0472143,-2.96028434 98.3505188,2.36822747 C101.468865,9.58227415 99.7739565,94.4657049 96.5216604,97.1799007 C93.2693643,99.8940965 80.0684044,95.7377562 73.8231885,96.4469513 C60.9217335,97.9120165 49.5764194,101.685884 40.3056957,98.5343532 C26.5472866,93.8572595 3.34721726,106.870056 0.963807519,94.4709958 C-1.42468014,82.0455192 0.99952741,7.01886703 4.16430977,2.36822747 Z" id="Rectangle-2" fill="#FF838B"></path>
+    </g>
+</svg>

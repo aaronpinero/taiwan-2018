@@ -1,0 +1,16 @@
+header {
+  @include sibling-margins(off);
+  text-align:center;
+  .supertitle {
+    font-size:scale(1);
+    line-height:leading(scale(2),tall);
+  }
+  h1 {
+    background-color:$red;
+    color:white;
+    display:inline-block;
+    font-weight:normal;
+    line-height:leading(scale(7),tall);
+    padding:0 grid(1);
+  }
+}

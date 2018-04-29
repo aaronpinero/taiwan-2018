@@ -1,3 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,800,800i');
 @import "settings";
 @import "../../node_modules/tyfy/source/scss/tyfy.scss";
+@import "header";
+
+body {
+  background-image:url(../img/cloud_top.svg);
+  background-position:top left;
+  background-repeat:no-repeat;
+  background-size:100% auto;
+  padding-left:grid(2);
+  padding-right:grid(2);
+  padding-top:8vw;
+}
