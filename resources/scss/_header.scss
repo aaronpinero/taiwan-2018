@@ -13,8 +13,14 @@ header {
     font-weight:normal;
     line-height:leading(scale(7),tall);
     padding:0 grid(1);
+    .orange & {
+      background-color:$orange;
+    }
     .yellow & {
       background-color:$yellow;
+    }
+    .green & {
+      background-color:$green;
     }
     .blue & {
       background-color:$blue;
