@@ -25,6 +25,9 @@ article {
     .blue & {
       color:$blue;
     }
+    .blue & {
+      color:$purple;
+    }
   }
   p {
     margin-left:auto;

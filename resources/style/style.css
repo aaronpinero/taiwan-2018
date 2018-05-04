@@ -1042,6 +1042,9 @@ header {
     /* line 25, resources/scss/_header.scss */
     .blue header h1 {
       background-color: #92CEFF; }
+    /* line 28, resources/scss/_header.scss */
+    .purple header h1 {
+      background-color: #C8A1FF; }
 
 /* line 1, resources/scss/_article.scss */
 article {
@@ -1072,12 +1075,15 @@ article {
     /* line 25, resources/scss/_article.scss */
     .blue article h2 {
       color: #92CEFF; }
-  /* line 29, resources/scss/_article.scss */
+    /* line 28, resources/scss/_article.scss */
+    .blue article h2 {
+      color: #C8A1FF; }
+  /* line 32, resources/scss/_article.scss */
   article p {
     margin-left: auto;
     margin-right: auto;
     max-width: 45rem; }
-  /* line 34, resources/scss/_article.scss */
+  /* line 37, resources/scss/_article.scss */
   article figure {
     box-sizing: border-box;
     display: block;
@@ -1101,43 +1107,43 @@ article {
     article figure :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h5,
     article figure :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h6 {
       margin-top: 0rem; }
-    /* line 41, resources/scss/_article.scss */
+    /* line 44, resources/scss/_article.scss */
     article figure.position-left {
       float: left;
       padding-bottom: 2rem;
       padding-right: 2rem; }
-    /* line 46, resources/scss/_article.scss */
+    /* line 49, resources/scss/_article.scss */
     article figure.position-right {
       float: right;
       padding-bottom: 2rem;
       padding-left: 2rem; }
-    /* line 51, resources/scss/_article.scss */
+    /* line 54, resources/scss/_article.scss */
     article figure.size-36 {
       width: calc(36% + (0.56 * 1rem)); }
-    /* line 54, resources/scss/_article.scss */
+    /* line 57, resources/scss/_article.scss */
     article figure.size-50 {
       width: 50%; }
-    /* line 57, resources/scss/_article.scss */
+    /* line 60, resources/scss/_article.scss */
     article figure.size-64 {
       width: calc(64% - (0.56 * 1rem)); }
-    /* line 60, resources/scss/_article.scss */
+    /* line 63, resources/scss/_article.scss */
     article figure.size-limited {
       margin-left: auto;
       margin-right: auto;
       max-width: 45rem; }
-    /* line 65, resources/scss/_article.scss */
+    /* line 68, resources/scss/_article.scss */
     article figure.orientation-landscape .imgframe {
       position: relative;
       height: 0;
       padding-top: 75%;
       width: 100%; }
-    /* line 71, resources/scss/_article.scss */
+    /* line 74, resources/scss/_article.scss */
     article figure.orientation-portrait .imgframe {
       position: relative;
       height: 0;
       padding-top: 133.33%;
       width: 100%; }
-    /* line 77, resources/scss/_article.scss */
+    /* line 80, resources/scss/_article.scss */
     article figure img {
       display: block;
       height: 100%;
@@ -1145,7 +1151,7 @@ article {
       position: absolute;
       top: 0;
       width: 100%; }
-    /* line 85, resources/scss/_article.scss */
+    /* line 88, resources/scss/_article.scss */
     article figure figcaption {
       color: #9b9990;
       font-size: 0.96426rem;
