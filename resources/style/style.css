@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,800,800i");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,800,800i");
 @keyframes fadein {
   from {
     opacity: 0; }
@@ -150,7 +150,7 @@ html {
 body {
   background: white;
   color: #32312D;
-  font-family: "Raleway", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.125rem;
   line-height: 2rem; }
 
@@ -279,7 +279,7 @@ h4,
 h5,
 h6 {
   color: #3c3b38;
-  font-family: "Raleway", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700; }
 
 /* line 32, node_modules/tyfy/source/scss/optional/_headings.scss */
@@ -766,7 +766,7 @@ blockquote {
     background-color: transparent;
     border: none;
     color: #de4185;
-    font-family: "Raleway", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 1.53134rem;
     line-height: 2rem;
     margin: 2rem 0 3rem 0;
@@ -843,7 +843,7 @@ table {
 
 /* line 6, node_modules/tyfy/source/scss/optional/_tables.scss */
 th {
-  font-family: "Raleway", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.125rem;
   font-variant-numeric: lining-nums tabular-nums;
   -webkit-font-feature-settings: "lnum", "tnum";
@@ -857,7 +857,7 @@ th {
 
 /* line 18, node_modules/tyfy/source/scss/optional/_tables.scss */
 td {
-  font-family: "Raleway", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.125rem;
   font-variant-numeric: lining-nums tabular-nums;
   -webkit-font-feature-settings: "lnum", "tnum";
@@ -954,7 +954,7 @@ table.vertical-rules {
 table.responsive td .td-label {
   color: #a3a2a1;
   display: block;
-  font-family: "Raleway", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 0.96426rem;
   left: 0;
   position: absolute;
@@ -1079,11 +1079,13 @@ article {
     .blue article h2 {
       color: #C8A1FF; }
   /* line 32, resources/scss/_article.scss */
-  article p {
+  article p,
+  article ul {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     max-width: 45rem; }
-  /* line 37, resources/scss/_article.scss */
+  /* line 39, resources/scss/_article.scss */
   article figure {
     box-sizing: border-box;
     display: block;
@@ -1107,43 +1109,43 @@ article {
     article figure :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h5,
     article figure :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h6 {
       margin-top: 0rem; }
-    /* line 44, resources/scss/_article.scss */
+    /* line 46, resources/scss/_article.scss */
     article figure.position-left {
       float: left;
       padding-bottom: 2rem;
       padding-right: 2rem; }
-    /* line 49, resources/scss/_article.scss */
+    /* line 51, resources/scss/_article.scss */
     article figure.position-right {
       float: right;
       padding-bottom: 2rem;
       padding-left: 2rem; }
-    /* line 54, resources/scss/_article.scss */
+    /* line 56, resources/scss/_article.scss */
     article figure.size-36 {
       width: calc(36% + (0.56 * 1rem)); }
-    /* line 57, resources/scss/_article.scss */
+    /* line 59, resources/scss/_article.scss */
     article figure.size-50 {
       width: 50%; }
-    /* line 60, resources/scss/_article.scss */
+    /* line 62, resources/scss/_article.scss */
     article figure.size-64 {
       width: calc(64% - (0.56 * 1rem)); }
-    /* line 63, resources/scss/_article.scss */
+    /* line 65, resources/scss/_article.scss */
     article figure.size-limited {
       margin-left: auto;
       margin-right: auto;
       max-width: 45rem; }
-    /* line 68, resources/scss/_article.scss */
+    /* line 70, resources/scss/_article.scss */
     article figure.orientation-landscape .imgframe {
       position: relative;
       height: 0;
       padding-top: 75%;
       width: 100%; }
-    /* line 74, resources/scss/_article.scss */
+    /* line 76, resources/scss/_article.scss */
     article figure.orientation-portrait .imgframe {
       position: relative;
       height: 0;
       padding-top: 133.33%;
       width: 100%; }
-    /* line 80, resources/scss/_article.scss */
+    /* line 82, resources/scss/_article.scss */
     article figure img {
       display: block;
       height: 100%;
@@ -1151,12 +1153,42 @@ article {
       position: absolute;
       top: 0;
       width: 100%; }
-    /* line 88, resources/scss/_article.scss */
+    /* line 90, resources/scss/_article.scss */
     article figure figcaption {
       color: #9b9990;
       font-size: 0.96426rem;
       line-height: 2rem;
       margin-top: 1rem; }
+  /* line 97, resources/scss/_article.scss */
+  article hr {
+    background: linear-gradient(to right, #FF838B 16%, #FFB264 17%, #FFB264 33%, #D8CD35 34%, #D8CD35 50%, #7BCE27 51%, #7BCE27 67%, #92CEFF 68%, #92CEFF 82%, #C8A1FF 83%);
+    border: none;
+    border-radius: 2px;
+    height: 4px; }
+  /* line 104, resources/scss/_article.scss */
+  .red article span[data-def] {
+    background-color: rgba(255, 131, 139, 0.1);
+    border-bottom: 1px #FF838B dotted; }
+  /* line 108, resources/scss/_article.scss */
+  .orange article span[data-def] {
+    background-color: rgba(255, 178, 100, 0.1);
+    border-bottom: 1px #FFB264 dotted; }
+  /* line 112, resources/scss/_article.scss */
+  .yellow article span[data-def] {
+    background-color: rgba(216, 205, 53, 0.1);
+    border-bottom: 1px #D8CD35 dotted; }
+  /* line 116, resources/scss/_article.scss */
+  .green article span[data-def] {
+    background-color: rgba(123, 206, 39, 0.1);
+    border-bottom: 1px #7BCE27 dotted; }
+  /* line 120, resources/scss/_article.scss */
+  .blue article span[data-def] {
+    background-color: rgba(146, 206, 255, 0.1);
+    border-bottom: 1px #92CEFF dotted; }
+  /* line 124, resources/scss/_article.scss */
+  .purple article span[data-def] {
+    background-color: rgba(200, 161, 255, 0.1);
+    border-bottom: 1px #C8A1FF dotted; }
 
 /* line 24, resources/scss/style.scss */
 body {
