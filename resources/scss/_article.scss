@@ -100,32 +100,73 @@ article {
     border-radius:2px;
     height:4px;
   }
-  span[data-def],
-  span[data-pinyin] {
-    font-family:$tyfy-system;
+  span.defined {
+    border-radius:grid(0.5);
+    box-sizing:border-box;
+    cursor:pointer;
+    display:inline-block;
+    margin:0;
+    padding:0 grid(0.25);
+    position:relative;
     .red & {
-      background-color:rgba($red,0.1);
-      border-bottom:1px $red dotted;
+      background-color:rgba($yellow,0.1);
+      border:1px $yellow dotted;
     }
     .orange & {
       background-color:rgba($orange,0.1);
-      border-bottom:1px $orange dotted;
+      border:1px $orange dotted;
     }
     .yellow & {
       background-color:rgba($yellow,0.1);
-      border-bottom:1px $yellow dotted;
+      border:1px $yellow dotted;
     }
     .green & {
       background-color:rgba($green,0.1);
-      border-bottom:1px $green dotted;
+      border:1px $green dotted;
     }
     .blue & {
       background-color:rgba($blue,0.1);
-      border-bottom:1px $blue dotted;
+      border:1px $blue dotted;
     }
     .purple & {
-      background-color:rgba($purple,0.1);
-      border-bottom:1px $purple dotted;
+      background-color:rgba($orange,0.1);
+      border:1px $orange dotted;
+    }
+    .def {
+      @include set-sibling-margins(all,grid(0.5));
+      border-radius:grid(0.5);
+      bottom:calc(100% + #{grid(0.5)});
+      box-shadow:0 1px 2px rgba(0,0,0,0.1);
+      box-sizing:border-box;
+      color:white;
+      display:none;
+      font-size:scale(-1);
+      line-height:leading(scale(-1),short);
+      left:50%;
+      margin-left:-5rem;
+      padding:grid(1);
+      position:absolute;
+      text-align:center;
+      width:10rem;
+      z-index:4;
+      .red & {
+        background-color:rgba(darken($yellow,10%),0.95);
+      }
+      .purple & {
+        background-color:rgba(darken($orange,10%),0.95);
+      }
+      span {
+        display:block;
+        &.pinyin {
+          font-weight:bold;
+        }
+      }
+    }
+    &:hover,
+    &:focus {
+      .def {
+        display:block;
+      }
     }
   }
 }
