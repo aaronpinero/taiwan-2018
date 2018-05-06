@@ -1177,32 +1177,32 @@ article {
     /* line 111, resources/scss/_article.scss */
     .red article span.defined {
       background-color: rgba(216, 205, 53, 0.1);
-      border: 1px #D8CD35 dotted; }
+      border: 1px #D8CD35 dashed; }
     /* line 115, resources/scss/_article.scss */
     .orange article span.defined {
-      background-color: rgba(255, 178, 100, 0.1);
-      border: 1px #FFB264 dotted; }
+      background-color: rgba(123, 206, 39, 0.1);
+      border: 1px #7BCE27 dashed; }
     /* line 119, resources/scss/_article.scss */
     .yellow article span.defined {
-      background-color: rgba(216, 205, 53, 0.1);
-      border: 1px #D8CD35 dotted; }
+      background-color: rgba(146, 206, 255, 0.1);
+      border: 1px #92CEFF dashed; }
     /* line 123, resources/scss/_article.scss */
     .green article span.defined {
-      background-color: rgba(123, 206, 39, 0.1);
-      border: 1px #7BCE27 dotted; }
+      background-color: rgba(200, 161, 255, 0.1);
+      border: 1px #C8A1FF dashed; }
     /* line 127, resources/scss/_article.scss */
     .blue article span.defined {
-      background-color: rgba(146, 206, 255, 0.1);
-      border: 1px #92CEFF dotted; }
+      background-color: rgba(255, 131, 139, 0.1);
+      border: 1px #FF838B dashed; }
     /* line 131, resources/scss/_article.scss */
     .purple article span.defined {
       background-color: rgba(255, 178, 100, 0.1);
-      border: 1px #FFB264 dotted; }
+      border: 1px #FFB264 dashed; }
     /* line 135, resources/scss/_article.scss */
     article span.defined .def {
       border-radius: 0.5rem;
       bottom: calc(100% + 0.5rem);
-      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
       box-sizing: border-box;
       color: white;
       display: none;
@@ -1221,20 +1221,108 @@ article {
       /* line 152, resources/scss/_article.scss */
       .red article span.defined .def {
         background-color: rgba(183, 173, 35, 0.95); }
-      /* line 155, resources/scss/_article.scss */
+        /* line 5, resources/scss/style.scss */
+        .red article span.defined .def::after {
+          content: "";
+          border-style: solid;
+          border-width: 1rem;
+          border-color: rgba(183, 173, 35, 0.95) transparent transparent transparent;
+          left: 50%;
+          margin-left: -1rem;
+          position: absolute;
+          top: 100%; }
+      /* line 156, resources/scss/_article.scss */
+      .yellow article span.defined .def {
+        background-color: rgba(95, 183, 255, 0.95); }
+        /* line 5, resources/scss/style.scss */
+        .yellow article span.defined .def::after {
+          content: "";
+          border-style: solid;
+          border-width: 1rem;
+          border-color: rgba(95, 183, 255, 0.95) transparent transparent transparent;
+          left: 50%;
+          margin-left: -1rem;
+          position: absolute;
+          top: 100%; }
+      /* line 160, resources/scss/_article.scss */
+      .blue article span.defined .def {
+        background-color: rgba(255, 80, 91, 0.95); }
+        /* line 5, resources/scss/style.scss */
+        .blue article span.defined .def::after {
+          content: "";
+          border-style: solid;
+          border-width: 1rem;
+          border-color: rgba(255, 80, 91, 0.95) transparent transparent transparent;
+          left: 50%;
+          margin-left: -1rem;
+          position: absolute;
+          top: 100%; }
+      /* line 164, resources/scss/_article.scss */
       .purple article span.defined .def {
         background-color: rgba(255, 153, 49, 0.95); }
-      /* line 158, resources/scss/_article.scss */
+        /* line 5, resources/scss/style.scss */
+        .purple article span.defined .def::after {
+          content: "";
+          border-style: solid;
+          border-width: 1rem;
+          border-color: rgba(255, 153, 49, 0.95) transparent transparent transparent;
+          left: 50%;
+          margin-left: -1rem;
+          position: absolute;
+          top: 100%; }
+      /* line 168, resources/scss/_article.scss */
       article span.defined .def span {
         display: block; }
-        /* line 160, resources/scss/_article.scss */
+        /* line 170, resources/scss/_article.scss */
         article span.defined .def span.pinyin {
           font-weight: bold; }
-    /* line 167, resources/scss/_article.scss */
+    /* line 177, resources/scss/_article.scss */
     article span.defined:hover .def, article span.defined:focus .def {
       display: block; }
 
-/* line 24, resources/scss/style.scss */
+/* line 183, resources/scss/_article.scss */
+.paging {
+  *zoom: 1;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 45rem; }
+  /* line 3, node_modules/tyfy/source/scss/required/_mixins.scss */
+  .paging::before, .paging::after {
+    display: table;
+    content: "";
+    line-height: 0; }
+  /* line 9, node_modules/tyfy/source/scss/required/_mixins.scss */
+  .paging::after {
+    clear: both; }
+  /* line 72, node_modules/tyfy/source/scss/required/_mixins.scss */
+  .paging * + * {
+    margin-top: 0rem; }
+  /* line 60, node_modules/tyfy/source/scss/required/_mixins.scss */
+  .paging dl * + *, .paging ol * + *, .paging ul * + * {
+    margin-top: 0rem; }
+  /* line 65, node_modules/tyfy/source/scss/required/_mixins.scss */
+  .paging dl * + dd {
+    margin-top: 0; }
+  /* line 48, node_modules/tyfy/source/scss/required/_mixins.scss */
+  .paging :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h1,
+  .paging :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h2,
+  .paging :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h3,
+  .paging :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h4,
+  .paging :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h5,
+  .paging :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h6 {
+    margin-top: 0rem; }
+  /* line 189, resources/scss/_article.scss */
+  .paging .prev {
+    float: left; }
+  /* line 192, resources/scss/_article.scss */
+  .paging .next {
+    float: right; }
+  /* line 195, resources/scss/_article.scss */
+  .paging .fa-2x {
+    margin: 0 0.5rem;
+    vertical-align: middle; }
+
+/* line 38, resources/scss/style.scss */
 body {
   background-image: url(../img/cloud_top.svg);
   background-position: top left;

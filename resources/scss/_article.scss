@@ -110,33 +110,33 @@ article {
     position:relative;
     .red & {
       background-color:rgba($yellow,0.1);
-      border:1px $yellow dotted;
+      border:1px $yellow dashed;
     }
     .orange & {
-      background-color:rgba($orange,0.1);
-      border:1px $orange dotted;
+      background-color:rgba($green,0.1);
+      border:1px $green dashed;
     }
     .yellow & {
-      background-color:rgba($yellow,0.1);
-      border:1px $yellow dotted;
+      background-color:rgba($blue,0.1);
+      border:1px $blue dashed;
     }
     .green & {
-      background-color:rgba($green,0.1);
-      border:1px $green dotted;
+      background-color:rgba($purple,0.1);
+      border:1px $purple dashed;
     }
     .blue & {
-      background-color:rgba($blue,0.1);
-      border:1px $blue dotted;
+      background-color:rgba($red,0.1);
+      border:1px $red dashed;
     }
     .purple & {
       background-color:rgba($orange,0.1);
-      border:1px $orange dotted;
+      border:1px $orange dashed;
     }
     .def {
       @include set-sibling-margins(all,grid(0.5));
       border-radius:grid(0.5);
       bottom:calc(100% + #{grid(0.5)});
-      box-shadow:0 1px 2px rgba(0,0,0,0.1);
+      box-shadow:0 1px 3px rgba(0,0,0,0.1);
       box-sizing:border-box;
       color:white;
       display:none;
@@ -150,9 +150,19 @@ article {
       width:10rem;
       z-index:4;
       .red & {
+        @include box-arrow(rgba(darken($yellow,10%),0.95),grid(1));
         background-color:rgba(darken($yellow,10%),0.95);
       }
+      .yellow & {
+        @include box-arrow(rgba(darken($blue,10%),0.95),grid(1));
+        background-color:rgba(darken($blue,10%),0.95);
+      }
+      .blue & {
+        @include box-arrow(rgba(darken($red,10%),0.95),grid(1));
+        background-color:rgba(darken($red,10%),0.95);
+      }
       .purple & {
+        @include box-arrow(rgba(darken($orange,10%),0.95),grid(1));
         background-color:rgba(darken($orange,10%),0.95);
       }
       span {
@@ -168,5 +178,22 @@ article {
         display:block;
       }
     }
+  }
+}
+.paging {
+  @include clearfix;
+  @include sibling-margins(off);
+  margin-left:auto;
+  margin-right:auto;
+  max-width:$limit-text;
+  .prev {
+    float:left;
+  }
+  .next {
+    float:right;
+  }
+  .fa-2x {
+    margin:0 grid(0.5);
+    vertical-align:middle;
   }
 }
