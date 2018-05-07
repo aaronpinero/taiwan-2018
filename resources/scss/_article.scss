@@ -157,6 +157,10 @@ article {
         @include box-arrow(rgba(darken($blue,10%),0.95),grid(1));
         background-color:rgba(darken($blue,10%),0.95);
       }
+      .orange & {
+        @include box-arrow(rgba(darken($green,10%),0.95),grid(1));
+        background-color:rgba(darken($green,10%),0.95);
+      }
       .blue & {
         @include box-arrow(rgba(darken($red,10%),0.95),grid(1));
         background-color:rgba(darken($red,10%),0.95);
