@@ -31,6 +31,7 @@
     "node-sass": "^4.9.0",
     "nodemon": "^1.14.11",
     "postcss-cli": "^4.1.1",
+    "templatesjs": "^2.0.0",
     "tyfy": "^1.4.2"
   }
 }
