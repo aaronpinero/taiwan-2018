@@ -2,8 +2,40 @@ article {
   margin-left:auto;
   margin-right:auto;
   max-width:$limit-body;
+  .chapter-header {
+    @include sibling-margins(off);
+    text-align:center;
+    .supertitle {
+      font-size:tyscale(1);
+      line-height:tylead(tyscale(2),tall);
+    }
+    h1 {
+      background-color:$red;
+      clip-path:url(#chop);
+      color:white;
+      display:inline-block;
+      font-weight:normal;
+      line-height:tylead(tyscale(7),tall);
+      padding:0 tygrid(1);
+      .orange & {
+        background-color:$orange;
+      }
+      .yellow & {
+        background-color:$yellow;
+      }
+      .green & {
+        background-color:$green;
+      }
+      .blue & {
+        background-color:$blue;
+      }
+      .purple & {
+        background-color:$purple;
+      }
+    }
+  }  
   section + section {
-    margin-top:grid(4);
+    margin-top:tygrid(4);
   }
   h2 {
     font-weight:normal;
@@ -41,26 +73,26 @@ article {
     box-sizing:border-box;
     display:block;
     margin:0;
-    padding-top:grid(2);
+    padding-top:tygrid(2);
     position:relative;
     &.position-left {
       float:left;
-      padding-bottom:grid(2);
-      padding-right:grid(2);
+      padding-bottom:tygrid(2);
+      padding-right:tygrid(2);
     }
     &.position-right {
       float:right;
-      padding-bottom:grid(2);
-      padding-left:grid(2);
+      padding-bottom:tygrid(2);
+      padding-left:tygrid(2);
     }
     &.size-36 {
-      width:calc(36% + (0.56 * #{grid(1)});
+      width:calc(36% + (0.56 * #{tygrid(1)});
     }
     &.size-50 {
       width:50%;
     }
     &.size-64 {
-      width:calc(64% - (0.56 * #{grid(1)});
+      width:calc(64% - (0.56 * #{tygrid(1)});
     }
     &.size-limited {
       margin-left:auto;
@@ -89,9 +121,9 @@ article {
     }
     figcaption {
       color:lighten($tyfy-color-foreground,40%);
-      font-size:scale(-1);
-      line-height:leading(scale(-1),base);
-      margin-top:grid(1);
+      font-size:tyscale(-1);
+      line-height:tylead(tyscale(-1),base);
+      margin-top:tygrid(1);
     }
   }
   hr {
@@ -101,12 +133,12 @@ article {
     height:4px;
   }
   span.defined {
-    border-radius:grid(0.5);
+    border-radius:tygrid(0.5);
     box-sizing:border-box;
     cursor:pointer;
     display:inline-block;
     margin:0;
-    padding:0 grid(0.25);
+    padding:0 tygrid(0.25);
     position:relative;
     .red & {
       background-color:rgba($yellow,0.1);
@@ -133,40 +165,40 @@ article {
       border:1px $orange dashed;
     }
     .def {
-      @include set-sibling-margins(all,grid(0.5));
-      border-radius:grid(0.5);
-      bottom:calc(100% + #{grid(0.5)});
+      @include set-sibling-margins(all,tygrid(0.5));
+      border-radius:tygrid(0.5);
+      bottom:calc(100% + #{tygrid(0.5)});
       box-shadow:0 1px 3px rgba(0,0,0,0.1);
       box-sizing:border-box;
       color:white;
       display:none;
-      font-size:scale(-1);
-      line-height:leading(scale(-1),short);
+      font-size:tyscale(-1);
+      line-height:tylead(tyscale(-1),short);
       left:50%;
       margin-left:-5rem;
-      padding:grid(1);
+      padding:tygrid(1);
       position:absolute;
       text-align:center;
       width:10rem;
       z-index:4;
       .red & {
-        @include box-arrow(rgba(darken($yellow,10%),0.95),grid(1));
+        @include box-arrow(rgba(darken($yellow,10%),0.95),tygrid(1));
         background-color:rgba(darken($yellow,10%),0.95);
       }
       .yellow & {
-        @include box-arrow(rgba(darken($blue,10%),0.95),grid(1));
+        @include box-arrow(rgba(darken($blue,10%),0.95),tygrid(1));
         background-color:rgba(darken($blue,10%),0.95);
       }
       .orange & {
-        @include box-arrow(rgba(darken($green,10%),0.95),grid(1));
+        @include box-arrow(rgba(darken($green,10%),0.95),tygrid(1));
         background-color:rgba(darken($green,10%),0.95);
       }
       .blue & {
-        @include box-arrow(rgba(darken($red,10%),0.95),grid(1));
+        @include box-arrow(rgba(darken($red,10%),0.95),tygrid(1));
         background-color:rgba(darken($red,10%),0.95);
       }
       .purple & {
-        @include box-arrow(rgba(darken($orange,10%),0.95),grid(1));
+        @include box-arrow(rgba(darken($orange,10%),0.95),tygrid(1));
         background-color:rgba(darken($orange,10%),0.95);
       }
       span {
@@ -197,7 +229,7 @@ article {
     float:right;
   }
   .fa-2x {
-    margin:0 grid(0.5);
+    margin:0 tygrid(0.5);
     vertical-align:middle;
   }
 }

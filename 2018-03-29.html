@@ -6,8 +6,9 @@
     <title>跟安得去臺灣：在飛機場</title>
     <meta name="description" content="An online travel diary about our trip to 臺灣 in 2018">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script defer src="resources/vendor/fa-light.js"></script>
-    <script src="resources/vendor/fontawesome.js"></script>
+    <script defer src="resources/vendor/fa-light.min.js"></script>
+    <script defer src="resources/vendor/fa-regular.min.js"></script>
+    <script src="resources/vendor/fontawesome.min.js"></script>
     <link rel="stylesheet" href="resources/style/style.css">
     
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -21,11 +22,20 @@
     </script>
   </head>
   <body class="red">
-    <header>
-      <div class="supertitle date">三月二十九日</div>
-      <h1>在飛機場</h1>
+    <header class="site-header">
+      <h1 class="site-title">跟安得去臺</h1>
+      <nav>
+        <ul>
+          <li class="chapters"><a href="#"><i class="far fa-bars fa-2x"></i> Chapters</a></li>
+          <li class="map"><a href="#"><i class="far fa-map-marker-alt fa-2x"></i> Map</a></li>
+        </ul>
+      </nav>
     </header>
     <article class="links-underlined">
+      <header class="chapter-header">
+        <div class="supertitle date">三月二十九日</div>
+        <h1 class="chapter-title">在飛機場</h1>
+      </header>
       <section class="preflight">
         <h2>Pre-flight</h2>
         <p>The last time we traveled to <span data-def="Taiwan">臺灣</span> was for Chinese New Year in 2016. Since then, I haven’t had more than a week of vacation at a time, and no more than a few days at a time in the last year. I think I’ve aged a five years in the last two. My hair is grey and falling out. I’ve had a lot of stress-related health issues. I have darkening circles around my eyes. I don’t always feel it, but I can see it when I look in the mirror in the morning: I’m tired.</p>
@@ -81,14 +91,6 @@
         <p>Now I’m going to get to sleep and hope that the mosquitos don’t eat me up while I’m defenseless.</p>
       </section>
     </article>
-    <nav class="paging">
-      <a class="next" href="2018-03-31a.html">第一天在台灣 <i class="fal fa-arrow-circle-right fa-2x"></i></a>
-    </nav>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="resources/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-    <script src="resources/vendor/jquery.inview.min.js"></script>
-    <script src="resources/script/lazyload.js"></script>
-    <script src="resources/script/definition.js"></script>
     <svg width="0" height="0">
       <defs>
         <clipPath id="chop" clipPathUnits="objectBoundingBox">
@@ -96,5 +98,19 @@
         </clipPath>
       </defs>
     </svg>
+    <footer class="site-footer">
+      <h1 class="site-title"><img src="resources/img/title-footer.svg" alt="跟安得去臺灣"></h1>
+      <nav>
+        <ul>
+          <li class="previous"><a href="#"><i class="far fa-chevron-left fa-2x"></i> Previous Page</a></li>
+          <li class="next"><a href="2018-03-31a.html" title="第一天在台灣"><i class="far fa-chevron-right fa-2x"></i> Next Page</a></li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="resources/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+    <script src="resources/vendor/jquery.inview.min.js"></script>
+    <script src="resources/script/lazyload.js"></script>
+    <script src="resources/script/definition.js"></script>
   </body>
 </html>

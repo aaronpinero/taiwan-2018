@@ -32,15 +32,27 @@
 @import "../../node_modules/tyfy/source/scss/optional/tables";
 
 @import "header";
+@import "footer";
 @import "article";
 
 
 body {
   background-image:url(../img/cloud_top.svg);
-  background-position:top left;
+  background-position:top center;
   background-repeat:no-repeat;
   background-size:100% auto;
-  padding-left:grid(2);
-  padding-right:grid(2);
+  padding-bottom:0;
+  padding-left:tygrid(5);
+  padding-right:tygrid(5);
   padding-top:8vw;
+  @media (max-width:1440px) {
+    background-size:auto tygrid(8);
+    padding-top:tygrid(8);
+  }
+  @media (max-width:720px) {
+    background-size:auto tygrid(4);
+    padding-left:tygrid(2);
+    padding-right:tygrid(2);
+    padding-top:tygrid(4);
+  }
 }

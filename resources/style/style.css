@@ -367,6 +367,7 @@ a {
   /* line 38, node_modules/tyfy/source/scss/optional/_links.scss */
   a[href].button {
     background-color: #ff505b;
+    border: none;
     border-radius: 0.25rem;
     color: white;
     cursor: pointer;
@@ -377,23 +378,42 @@ a {
     padding: 0.5rem 1.5rem;
     text-decoration: none;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.25s, box-shadow 0.25s; }
-    /* line 123, node_modules/tyfy/source/scss/required/_mixins.scss */
-    a[href].button:link, a[href].button:visited, a[href].button:hover, a[href].button:active {
-      border: none !important;
-      color: #fff;
-      text-decoration: none; }
-    /* line 131, node_modules/tyfy/source/scss/required/_mixins.scss */
+    transition: background-color 0.25s, box-shadow 0.25s;
+    vertical-align: middle; }
+    /* line 125, node_modules/tyfy/source/scss/required/_mixins.scss */
     a[href].button:hover {
       background-color: #61a31f;
       background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 100%);
       filter: progid:dximagetransform.microsoft.gradient(startColorstr="#00000000",endColorstr="#1a000000",GradientType=0); }
-    /* line 136, node_modules/tyfy/source/scss/required/_mixins.scss */
+    /* line 130, node_modules/tyfy/source/scss/required/_mixins.scss */
     a[href].button:active {
       background-color: #61a31f;
       box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset; }
-    /* line 140, node_modules/tyfy/source/scss/required/_mixins.scss */
+    /* line 134, node_modules/tyfy/source/scss/required/_mixins.scss */
     a[href].button:focus {
+      outline: none; }
+  /* line 41, node_modules/tyfy/source/scss/optional/_links.scss */
+  a[href].button-outline {
+    background-color: transparent;
+    border: 0.13rem #ff505b solid;
+    border-radius: 0.25rem;
+    color: #ff505b;
+    cursor: pointer;
+    display: inline-block;
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0;
+    padding: 0.37rem 1.37rem;
+    text-decoration: none;
+    transition: border-color 0.25s, color 0.25s, background-color 0.25s;
+    vertical-align: middle; }
+    /* line 153, node_modules/tyfy/source/scss/required/_mixins.scss */
+    a[href].button-outline:hover, a[href].button-outline:active {
+      background-color: rgba(97, 163, 31, 0.1);
+      border-color: #61a31f;
+      color: #61a31f; }
+    /* line 159, node_modules/tyfy/source/scss/required/_mixins.scss */
+    a[href].button-outline:focus {
       outline: none; }
 
 /* line 2, node_modules/tyfy/source/scss/optional/_lists.scss */
@@ -717,6 +737,7 @@ span.smallcaps {
 /* line 48, node_modules/tyfy/source/scss/optional/_utility.scss */
 .button {
   background-color: #ff505b;
+  border: none;
   border-radius: 0.25rem;
   color: white;
   cursor: pointer;
@@ -727,22 +748,18 @@ span.smallcaps {
   padding: 0.5rem 1.5rem;
   text-decoration: none;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.25s, box-shadow 0.25s; }
-  /* line 123, node_modules/tyfy/source/scss/required/_mixins.scss */
-  .button:link, .button:visited, .button:hover, .button:active {
-    border: none !important;
-    color: #fff;
-    text-decoration: none; }
-  /* line 131, node_modules/tyfy/source/scss/required/_mixins.scss */
+  transition: background-color 0.25s, box-shadow 0.25s;
+  vertical-align: middle; }
+  /* line 125, node_modules/tyfy/source/scss/required/_mixins.scss */
   .button:hover {
     background-color: #61a31f;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 100%);
     filter: progid:dximagetransform.microsoft.gradient(startColorstr="#00000000",endColorstr="#1a000000",GradientType=0); }
-  /* line 136, node_modules/tyfy/source/scss/required/_mixins.scss */
+  /* line 130, node_modules/tyfy/source/scss/required/_mixins.scss */
   .button:active {
     background-color: #61a31f;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset; }
-  /* line 140, node_modules/tyfy/source/scss/required/_mixins.scss */
+  /* line 134, node_modules/tyfy/source/scss/required/_mixins.scss */
   .button:focus {
     outline: none; }
 
@@ -997,54 +1014,198 @@ table.responsive td .td-label {
     margin-left: 2rem; } }
 
 /* line 1, resources/scss/_header.scss */
-header {
+.site-header {
+  height: 0;
   text-align: center; }
   /* line 72, node_modules/tyfy/source/scss/required/_mixins.scss */
-  header * + * {
+  .site-header * + * {
     margin-top: 0rem; }
   /* line 60, node_modules/tyfy/source/scss/required/_mixins.scss */
-  header dl * + *, header ol * + *, header ul * + * {
+  .site-header dl * + *, .site-header ol * + *, .site-header ul * + * {
     margin-top: 0rem; }
   /* line 65, node_modules/tyfy/source/scss/required/_mixins.scss */
-  header dl * + dd {
+  .site-header dl * + dd {
     margin-top: 0; }
   /* line 48, node_modules/tyfy/source/scss/required/_mixins.scss */
-  header :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h1,
-  header :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h2,
-  header :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h3,
-  header :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h4,
-  header :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h5,
-  header :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h6 {
+  .site-header :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h1,
+  .site-header :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h2,
+  .site-header :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h3,
+  .site-header :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h4,
+  .site-header :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h5,
+  .site-header :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h6 {
     margin-top: 0rem; }
-  /* line 4, resources/scss/_header.scss */
-  header .supertitle {
-    font-size: 1.31254rem;
-    line-height: 2rem; }
+  /* line 5, resources/scss/_header.scss */
+  .site-header h1 {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px !important;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px !important; }
+    /* line 32, node_modules/tyfy/source/scss/required/_mixins.scss */
+    .site-header h1.focusable:active, .site-header h1.focusable:focus {
+      clip: auto;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      position: static;
+      width: auto; }
   /* line 8, resources/scss/_header.scss */
-  header h1 {
-    background-color: #FF838B;
-    -webkit-clip-path: url(#chop);
-            clip-path: url(#chop);
-    color: white;
-    display: inline-block;
+  .site-header ul {
+    margin: 0;
+    padding: 0; }
+    /* line 11, resources/scss/_header.scss */
+    .site-header ul li {
+      display: block;
+      margin: 0;
+      padding: 0; }
+      /* line 15, resources/scss/_header.scss */
+      .site-header ul li a[href] {
+        background-color: transparent;
+        border-radius: 50%;
+        display: block;
+        height: 3rem;
+        line-height: 3rem;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 3rem; }
+        /* line 24, resources/scss/_header.scss */
+        .site-header ul li a[href] .svg-inline--fa {
+          font-size: 1.5rem;
+          width: 3rem;
+          padding-top: 0.75rem; }
+        @media (max-width: 720px) {
+          /* line 15, resources/scss/_header.scss */
+          .site-header ul li a[href] {
+            background-color: white; } }
+      /* line 33, resources/scss/_header.scss */
+      .site-header ul li.chapters {
+        left: 1rem;
+        position: fixed;
+        top: 1rem;
+        z-index: 100; }
+        /* line 38, resources/scss/_header.scss */
+        .site-header ul li.chapters a[href] {
+          color: #FF838B; }
+          /* line 40, resources/scss/_header.scss */
+          .site-header ul li.chapters a[href]:hover {
+            background-color: #FF838B;
+            color: white; }
+      /* line 46, resources/scss/_header.scss */
+      .site-header ul li.map {
+        position: fixed;
+        right: 1rem;
+        top: 1rem;
+        z-index: 100; }
+        /* line 51, resources/scss/_header.scss */
+        .site-header ul li.map a[href] {
+          color: #C8A1FF; }
+          /* line 53, resources/scss/_header.scss */
+          .site-header ul li.map a[href]:hover {
+            background-color: #C8A1FF;
+            color: white; }
+
+/* line 1, resources/scss/_footer.scss */
+.site-footer {
+  box-sizing: border-box;
+  height: 5rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  text-align: center; }
+  /* line 72, node_modules/tyfy/source/scss/required/_mixins.scss */
+  .site-footer * + * {
+    margin-top: 0rem; }
+  /* line 60, node_modules/tyfy/source/scss/required/_mixins.scss */
+  .site-footer dl * + *, .site-footer ol * + *, .site-footer ul * + * {
+    margin-top: 0rem; }
+  /* line 65, node_modules/tyfy/source/scss/required/_mixins.scss */
+  .site-footer dl * + dd {
+    margin-top: 0; }
+  /* line 48, node_modules/tyfy/source/scss/required/_mixins.scss */
+  .site-footer :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h1,
+  .site-footer :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h2,
+  .site-footer :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h3,
+  .site-footer :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h4,
+  .site-footer :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h5,
+  .site-footer :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h6 {
+    margin-top: 0rem; }
+  @media (max-width: 720px) {
+    /* line 1, resources/scss/_footer.scss */
+    .site-footer {
+      position: relative; } }
+  /* line 11, resources/scss/_footer.scss */
+  .site-footer h1 {
+    font-size: 1.125rem;
     font-weight: normal;
-    line-height: 5rem;
-    padding: 0 1rem; }
-    /* line 16, resources/scss/_header.scss */
-    .orange header h1 {
-      background-color: #FFB264; }
-    /* line 19, resources/scss/_header.scss */
-    .yellow header h1 {
-      background-color: #D8CD35; }
-    /* line 22, resources/scss/_header.scss */
-    .green header h1 {
-      background-color: #7BCE27; }
-    /* line 25, resources/scss/_header.scss */
-    .blue header h1 {
-      background-color: #92CEFF; }
-    /* line 28, resources/scss/_header.scss */
-    .purple header h1 {
-      background-color: #C8A1FF; }
+    line-height: 3rem; }
+  /* line 16, resources/scss/_footer.scss */
+  .site-footer ul {
+    height: 0;
+    left: 0;
+    margin: 0;
+    padding: 0; }
+    /* line 21, resources/scss/_footer.scss */
+    .site-footer ul li {
+      display: block;
+      margin: 0;
+      padding: 0; }
+      /* line 25, resources/scss/_footer.scss */
+      .site-footer ul li a[href] {
+        background-color: transparent;
+        border-radius: 50%;
+        display: block;
+        height: 3rem;
+        line-height: 3rem;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 3rem; }
+        /* line 34, resources/scss/_footer.scss */
+        .site-footer ul li a[href] .svg-inline--fa {
+          font-size: 1.5rem;
+          width: 3rem;
+          padding-top: 0.75rem; }
+      @media (max-width: 720px) {
+        /* line 40, resources/scss/_footer.scss */
+        .site-footer ul li.previous {
+          left: -1rem;
+          position: absolute;
+          top: 1rem; } }
+      @media (min-width: 721px) {
+        /* line 40, resources/scss/_footer.scss */
+        .site-footer ul li.previous {
+          bottom: 1rem;
+          left: 1rem;
+          position: fixed;
+          z-index: 100; } }
+      /* line 52, resources/scss/_footer.scss */
+      .site-footer ul li.previous a[href] {
+        color: #FFB264; }
+        /* line 54, resources/scss/_footer.scss */
+        .site-footer ul li.previous a[href]:hover {
+          background-color: #FFB264;
+          color: white; }
+      @media (max-width: 720px) {
+        /* line 60, resources/scss/_footer.scss */
+        .site-footer ul li.next {
+          position: absolute;
+          right: -1rem;
+          top: 1rem; } }
+      @media (min-width: 721px) {
+        /* line 60, resources/scss/_footer.scss */
+        .site-footer ul li.next {
+          bottom: 1rem;
+          position: fixed;
+          right: 1rem;
+          z-index: 100; } }
+      /* line 72, resources/scss/_footer.scss */
+      .site-footer ul li.next a[href] {
+        color: #7BCE27; }
+        /* line 74, resources/scss/_footer.scss */
+        .site-footer ul li.next a[href]:hover {
+          background-color: #7BCE27;
+          color: white; }
 
 /* line 1, resources/scss/_article.scss */
 article {
@@ -1052,40 +1213,89 @@ article {
   margin-right: auto;
   max-width: 80rem; }
   /* line 5, resources/scss/_article.scss */
+  article .chapter-header {
+    text-align: center; }
+    /* line 72, node_modules/tyfy/source/scss/required/_mixins.scss */
+    article .chapter-header * + * {
+      margin-top: 0rem; }
+    /* line 60, node_modules/tyfy/source/scss/required/_mixins.scss */
+    article .chapter-header dl * + *, article .chapter-header ol * + *, article .chapter-header ul * + * {
+      margin-top: 0rem; }
+    /* line 65, node_modules/tyfy/source/scss/required/_mixins.scss */
+    article .chapter-header dl * + dd {
+      margin-top: 0; }
+    /* line 48, node_modules/tyfy/source/scss/required/_mixins.scss */
+    article .chapter-header :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h1,
+    article .chapter-header :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h2,
+    article .chapter-header :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h3,
+    article .chapter-header :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h4,
+    article .chapter-header :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h5,
+    article .chapter-header :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h6 {
+      margin-top: 0rem; }
+    /* line 8, resources/scss/_article.scss */
+    article .chapter-header .supertitle {
+      font-size: 1.31254rem;
+      line-height: 2rem; }
+    /* line 12, resources/scss/_article.scss */
+    article .chapter-header h1 {
+      background-color: #FF838B;
+      -webkit-clip-path: url(#chop);
+              clip-path: url(#chop);
+      color: white;
+      display: inline-block;
+      font-weight: normal;
+      line-height: 5rem;
+      padding: 0 1rem; }
+      /* line 20, resources/scss/_article.scss */
+      .orange article .chapter-header h1 {
+        background-color: #FFB264; }
+      /* line 23, resources/scss/_article.scss */
+      .yellow article .chapter-header h1 {
+        background-color: #D8CD35; }
+      /* line 26, resources/scss/_article.scss */
+      .green article .chapter-header h1 {
+        background-color: #7BCE27; }
+      /* line 29, resources/scss/_article.scss */
+      .blue article .chapter-header h1 {
+        background-color: #92CEFF; }
+      /* line 32, resources/scss/_article.scss */
+      .purple article .chapter-header h1 {
+        background-color: #C8A1FF; }
+  /* line 37, resources/scss/_article.scss */
   article section + section {
     margin-top: 4rem; }
-  /* line 8, resources/scss/_article.scss */
+  /* line 40, resources/scss/_article.scss */
   article h2 {
     font-weight: normal;
     margin-left: auto;
     margin-right: auto;
     max-width: 45rem; }
-    /* line 13, resources/scss/_article.scss */
+    /* line 45, resources/scss/_article.scss */
     .red article h2 {
       color: #FF838B; }
-    /* line 16, resources/scss/_article.scss */
+    /* line 48, resources/scss/_article.scss */
     .orange article h2 {
       color: #FFB264; }
-    /* line 19, resources/scss/_article.scss */
+    /* line 51, resources/scss/_article.scss */
     .yellow article h2 {
       color: #D8CD35; }
-    /* line 22, resources/scss/_article.scss */
+    /* line 54, resources/scss/_article.scss */
     .green article h2 {
       color: #7BCE27; }
-    /* line 25, resources/scss/_article.scss */
+    /* line 57, resources/scss/_article.scss */
     .blue article h2 {
       color: #92CEFF; }
-    /* line 28, resources/scss/_article.scss */
+    /* line 60, resources/scss/_article.scss */
     .blue article h2 {
       color: #C8A1FF; }
-  /* line 32, resources/scss/_article.scss */
+  /* line 64, resources/scss/_article.scss */
   article p,
   article ul {
     box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     max-width: 45rem; }
-  /* line 39, resources/scss/_article.scss */
+  /* line 71, resources/scss/_article.scss */
   article figure {
     box-sizing: border-box;
     display: block;
@@ -1109,43 +1319,43 @@ article {
     article figure :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h5,
     article figure :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h6 {
       margin-top: 0rem; }
-    /* line 46, resources/scss/_article.scss */
+    /* line 78, resources/scss/_article.scss */
     article figure.position-left {
       float: left;
       padding-bottom: 2rem;
       padding-right: 2rem; }
-    /* line 51, resources/scss/_article.scss */
+    /* line 83, resources/scss/_article.scss */
     article figure.position-right {
       float: right;
       padding-bottom: 2rem;
       padding-left: 2rem; }
-    /* line 56, resources/scss/_article.scss */
+    /* line 88, resources/scss/_article.scss */
     article figure.size-36 {
       width: calc(36% + (0.56 * 1rem)); }
-    /* line 59, resources/scss/_article.scss */
+    /* line 91, resources/scss/_article.scss */
     article figure.size-50 {
       width: 50%; }
-    /* line 62, resources/scss/_article.scss */
+    /* line 94, resources/scss/_article.scss */
     article figure.size-64 {
       width: calc(64% - (0.56 * 1rem)); }
-    /* line 65, resources/scss/_article.scss */
+    /* line 97, resources/scss/_article.scss */
     article figure.size-limited {
       margin-left: auto;
       margin-right: auto;
       max-width: 45rem; }
-    /* line 70, resources/scss/_article.scss */
+    /* line 102, resources/scss/_article.scss */
     article figure.orientation-landscape .imgframe {
       position: relative;
       height: 0;
       padding-top: 75%;
       width: 100%; }
-    /* line 76, resources/scss/_article.scss */
+    /* line 108, resources/scss/_article.scss */
     article figure.orientation-portrait .imgframe {
       position: relative;
       height: 0;
       padding-top: 133.33%;
       width: 100%; }
-    /* line 82, resources/scss/_article.scss */
+    /* line 114, resources/scss/_article.scss */
     article figure img {
       display: block;
       height: 100%;
@@ -1153,19 +1363,19 @@ article {
       position: absolute;
       top: 0;
       width: 100%; }
-    /* line 90, resources/scss/_article.scss */
+    /* line 122, resources/scss/_article.scss */
     article figure figcaption {
       color: #9b9990;
       font-size: 0.96426rem;
       line-height: 2rem;
       margin-top: 1rem; }
-  /* line 97, resources/scss/_article.scss */
+  /* line 129, resources/scss/_article.scss */
   article hr {
     background: linear-gradient(to right, #FF838B 16%, #FFB264 17%, #FFB264 33%, #D8CD35 34%, #D8CD35 50%, #7BCE27 51%, #7BCE27 67%, #92CEFF 68%, #92CEFF 82%, #C8A1FF 83%);
     border: none;
     border-radius: 2px;
     height: 4px; }
-  /* line 103, resources/scss/_article.scss */
+  /* line 135, resources/scss/_article.scss */
   article span.defined {
     border-radius: 0.5rem;
     box-sizing: border-box;
@@ -1174,31 +1384,31 @@ article {
     margin: 0;
     padding: 0 0.25rem;
     position: relative; }
-    /* line 111, resources/scss/_article.scss */
+    /* line 143, resources/scss/_article.scss */
     .red article span.defined {
       background-color: rgba(216, 205, 53, 0.1);
       border: 1px #D8CD35 dashed; }
-    /* line 115, resources/scss/_article.scss */
+    /* line 147, resources/scss/_article.scss */
     .orange article span.defined {
       background-color: rgba(123, 206, 39, 0.1);
       border: 1px #7BCE27 dashed; }
-    /* line 119, resources/scss/_article.scss */
+    /* line 151, resources/scss/_article.scss */
     .yellow article span.defined {
       background-color: rgba(146, 206, 255, 0.1);
       border: 1px #92CEFF dashed; }
-    /* line 123, resources/scss/_article.scss */
+    /* line 155, resources/scss/_article.scss */
     .green article span.defined {
       background-color: rgba(200, 161, 255, 0.1);
       border: 1px #C8A1FF dashed; }
-    /* line 127, resources/scss/_article.scss */
+    /* line 159, resources/scss/_article.scss */
     .blue article span.defined {
       background-color: rgba(255, 131, 139, 0.1);
       border: 1px #FF838B dashed; }
-    /* line 131, resources/scss/_article.scss */
+    /* line 163, resources/scss/_article.scss */
     .purple article span.defined {
       background-color: rgba(255, 178, 100, 0.1);
       border: 1px #FFB264 dashed; }
-    /* line 135, resources/scss/_article.scss */
+    /* line 167, resources/scss/_article.scss */
     article span.defined .def {
       border-radius: 0.5rem;
       bottom: calc(100% + 0.5rem);
@@ -1218,7 +1428,7 @@ article {
       /* line 72, node_modules/tyfy/source/scss/required/_mixins.scss */
       article span.defined .def * + * {
         margin-top: 0.5rem; }
-      /* line 152, resources/scss/_article.scss */
+      /* line 184, resources/scss/_article.scss */
       .red article span.defined .def {
         background-color: rgba(183, 173, 35, 0.95); }
         /* line 5, resources/scss/style.scss */
@@ -1231,7 +1441,7 @@ article {
           margin-left: -1rem;
           position: absolute;
           top: 100%; }
-      /* line 156, resources/scss/_article.scss */
+      /* line 188, resources/scss/_article.scss */
       .yellow article span.defined .def {
         background-color: rgba(95, 183, 255, 0.95); }
         /* line 5, resources/scss/style.scss */
@@ -1244,7 +1454,7 @@ article {
           margin-left: -1rem;
           position: absolute;
           top: 100%; }
-      /* line 160, resources/scss/_article.scss */
+      /* line 192, resources/scss/_article.scss */
       .orange article span.defined .def {
         background-color: rgba(97, 163, 31, 0.95); }
         /* line 5, resources/scss/style.scss */
@@ -1257,7 +1467,7 @@ article {
           margin-left: -1rem;
           position: absolute;
           top: 100%; }
-      /* line 164, resources/scss/_article.scss */
+      /* line 196, resources/scss/_article.scss */
       .blue article span.defined .def {
         background-color: rgba(255, 80, 91, 0.95); }
         /* line 5, resources/scss/style.scss */
@@ -1270,7 +1480,7 @@ article {
           margin-left: -1rem;
           position: absolute;
           top: 100%; }
-      /* line 168, resources/scss/_article.scss */
+      /* line 200, resources/scss/_article.scss */
       .purple article span.defined .def {
         background-color: rgba(255, 153, 49, 0.95); }
         /* line 5, resources/scss/style.scss */
@@ -1283,17 +1493,17 @@ article {
           margin-left: -1rem;
           position: absolute;
           top: 100%; }
-      /* line 172, resources/scss/_article.scss */
+      /* line 204, resources/scss/_article.scss */
       article span.defined .def span {
         display: block; }
-        /* line 174, resources/scss/_article.scss */
+        /* line 206, resources/scss/_article.scss */
         article span.defined .def span.pinyin {
           font-weight: bold; }
-    /* line 181, resources/scss/_article.scss */
+    /* line 213, resources/scss/_article.scss */
     article span.defined:hover .def, article span.defined:focus .def {
       display: block; }
 
-/* line 187, resources/scss/_article.scss */
+/* line 219, resources/scss/_article.scss */
 .paging {
   *zoom: 1;
   margin-left: auto;
@@ -1324,23 +1534,36 @@ article {
   .paging :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h5,
   .paging :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h6 {
     margin-top: 0rem; }
-  /* line 193, resources/scss/_article.scss */
+  /* line 225, resources/scss/_article.scss */
   .paging .prev {
     float: left; }
-  /* line 196, resources/scss/_article.scss */
+  /* line 228, resources/scss/_article.scss */
   .paging .next {
     float: right; }
-  /* line 199, resources/scss/_article.scss */
+  /* line 231, resources/scss/_article.scss */
   .paging .fa-2x {
     margin: 0 0.5rem;
     vertical-align: middle; }
 
-/* line 38, resources/scss/style.scss */
+/* line 39, resources/scss/style.scss */
 body {
   background-image: url(../img/cloud_top.svg);
-  background-position: top left;
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: 100% auto;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-bottom: 0;
+  padding-left: 5rem;
+  padding-right: 5rem;
   padding-top: 8vw; }
+  @media (max-width: 1440px) {
+    /* line 39, resources/scss/style.scss */
+    body {
+      background-size: auto 8rem;
+      padding-top: 8rem; } }
+  @media (max-width: 720px) {
+    /* line 39, resources/scss/style.scss */
+    body {
+      background-size: auto 4rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-top: 4rem; } }

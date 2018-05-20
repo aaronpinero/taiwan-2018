@@ -1,32 +1,61 @@
-header {
+.site-header {
   @include sibling-margins(off);
+  height:0;
   text-align:center;
-  .supertitle {
-    font-size:scale(1);
-    line-height:leading(scale(2),tall);
-  }
   h1 {
-    background-color:$red;
-    clip-path:url(#chop);
-    color:white;
-    display:inline-block;
-    font-weight:normal;
-    line-height:leading(scale(7),tall);
-    padding:0 grid(1);
-    .orange & {
-      background-color:$orange;
-    }
-    .yellow & {
-      background-color:$yellow;
-    }
-    .green & {
-      background-color:$green;
-    }
-    .blue & {
-      background-color:$blue;
-    }
-    .purple & {
-      background-color:$purple;
+    @include visuallyhidden;
+  }
+  ul {
+    margin:0;
+    padding:0;
+    li {
+      display:block;
+      margin:0;
+      padding:0;
+      a[href] {
+        background-color:transparent;
+        border-radius:50%;
+        display:block;
+        height:tygrid(3);
+        line-height:tygrid(3);
+        overflow:hidden;
+        white-space:nowrap;
+        width:tygrid(3);
+        .svg-inline--fa {
+          font-size:tygrid(1.5);
+          width:tygrid(3);
+          padding-top:tygrid(0.75);
+        }
+        @media (max-width:720px) {
+          background-color:white;
+        }
+      }
+      &.chapters {
+        left:tygrid(1);
+        position:fixed;
+        top:tygrid(1);
+        z-index:100;
+        a[href] {
+          color:$red;
+          &:hover {
+            background-color:$red;
+            color:white;
+          }
+        }
+      }
+      &.map {
+        position:fixed;
+        right:tygrid(1);
+        top:tygrid(1);
+        z-index:100;
+        a[href] {
+          color:$purple;
+          &:hover {
+            background-color:$purple;
+            color:white;
+          }
+        }
+      }
     }
   }
 }
