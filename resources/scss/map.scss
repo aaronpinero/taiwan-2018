@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i');
+@import "settings";
+
+$tyfy-margins-on:false;
+
+@import "../../node_modules/tyfy/source/scss/required/core";
+@import "../../node_modules/tyfy/source/scss/required/functions";
+@import "../../node_modules/tyfy/source/scss/required/settings";
+@import "../../node_modules/tyfy/source/scss/required/mixins";
+
+@import "../../node_modules/tyfy/source/scss/essential/normalize";
+@import "../../node_modules/tyfy/source/scss/essential/body";
+@import "../../node_modules/tyfy/source/scss/essential/spacing";
+
+@import "../../node_modules/tyfy/source/scss/optional/paragraphs";
+@import "../../node_modules/tyfy/source/scss/optional/headings";
+@import "../../node_modules/tyfy/source/scss/optional/links";
+@import "../../node_modules/tyfy/source/scss/optional/lists";
+@import "../../node_modules/tyfy/source/scss/optional/utility";
+@import "../../node_modules/tyfy/source/scss/optional/tables";
+
+#map {
+  bottom:0;
+  left:0;
+  position:fixed;
+  top:0;
+  width:100%;
+}
