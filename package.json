@@ -29,9 +29,9 @@
   "devDependencies": {
     "autoprefixer": "^7.2.6",
     "node-sass": "^4.9.0",
-    "nodemon": "^1.14.11",
+    "nodemon": "^1.17.5",
     "postcss-cli": "^4.1.1",
     "templatesjs": "^2.0.0",
-    "tyfy": "^1.4.2"
+    "tyfy": "^1.4.3"
   }
 }
